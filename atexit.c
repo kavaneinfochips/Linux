@@ -17,11 +17,11 @@ void main()
         printf("Printing in reverse order \n");
         printf("noraml loop \n");
         atexit(fun1);
-        printf("donm1 \n");
+        printf("git_donm1 \n");
         atexit(fun2);
-        printf("donm2 \n");
+        printf("git_donm2 \n");
         atexit(fun3);
-        printf("donm3 \n");
+        printf("git_donm3 \n");
 
         exit(0);
 
