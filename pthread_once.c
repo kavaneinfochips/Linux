@@ -5,7 +5,7 @@
 
 pthread_once_t  once=PTHREAD_ONCE_INIT;
 
-void *myinit()
+void *init()
 {
 
     printf("\n init..............\n");
@@ -15,7 +15,7 @@ void *mythread(void *i)
 {
 
 printf("\n I am thread :%d \n",(int *)i);
-pthread_once(&once,(void *)myinit);
+pthread_once(&once,(void *)init);
 
 printf("\n Exit the threading :%d \n,",(int *)i);
 
