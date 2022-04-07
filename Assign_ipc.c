@@ -4,7 +4,7 @@
 #include<sys/shm.h>
 
 int main(){
-	int r;
+	int k;
 	int id;
 	id = shmget(48,250,IPC_CREAT|0644);
 	if(id<0){
@@ -12,7 +12,7 @@ int main(){
 		return 0;
 	}
 	printf("id=%d\n",id);
-	r = shmat(id,0,0);
+	k = shmat(id,0,0);
 	printf("%d\n",r);
 	return 0;
 }
